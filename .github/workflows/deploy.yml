@@ -33,4 +33,3 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ai-knowledge-hub
           directory: .next
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
