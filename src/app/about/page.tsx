@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "关于我 - 企业AI架构师",
+  title: "关于我",
   description:
     "20年企业IT经验，10年日本企业开发，10年医疗信息化。专注医疗AI、外贸AI、企业RAG知识库建设。",
 };

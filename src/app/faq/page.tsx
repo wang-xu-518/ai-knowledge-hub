@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "常见问题 - 企业AI架构师",
+  title: "常见问题",
   description:
     "关于医疗AI、外贸AI和企业RAG知识库的常见问题解答。帮助您了解AI落地的关键问题。",
 };
