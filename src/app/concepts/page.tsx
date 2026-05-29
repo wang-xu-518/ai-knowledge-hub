@@ -14,15 +14,15 @@ import { getTermsByIndustry } from "@/lib/terms";
 import { Lightbulb, HeartPulse, Globe, Layers } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Concepts - AI Knowledge Hub",
+  title: "AI概念库 - 企业AI架构师",
   description:
-    "Comprehensive AI concept library covering general AI, healthcare AI, and trade AI terminology with definitions.",
+    "AI核心概念库：涵盖通用AI、医疗AI、外贸AI的专业术语定义，帮助理解AI技术原理与应用场景。",
 };
 
 const articleSchema = generateArticleSchema({
-  headline: "AI Concepts Library - AI Knowledge Hub",
+  headline: "AI概念库 - 企业AI架构师",
   description:
-    "Comprehensive AI concept library covering general AI, healthcare AI, and trade AI terminology.",
+    "AI核心概念库：涵盖通用AI、医疗AI、外贸AI的专业术语定义。",
   url: `${SITE_URL}/concepts`,
   datePublished: "2024-01-01",
 });
@@ -30,24 +30,24 @@ const articleSchema = generateArticleSchema({
 const industries = [
   {
     key: "general" as const,
-    title: "General AI",
-    description: "Core AI and machine learning concepts applicable across all industries.",
+    title: "通用AI",
+    description: "适用于各行业的核心AI和机器学习概念。",
     icon: Lightbulb,
     color: "text-amber-600",
     bgColor: "bg-amber-50",
   },
   {
     key: "healthcare" as const,
-    title: "Healthcare AI",
-    description: "AI concepts specific to healthcare delivery, compliance, and clinical applications.",
+    title: "医疗AI",
+    description: "医疗服务、合规和临床应用相关的AI概念。",
     icon: HeartPulse,
     color: "text-rose-600",
     bgColor: "bg-rose-50",
   },
   {
     key: "trade" as const,
-    title: "Trade AI",
-    description: "AI concepts for supply chain, logistics, and international commerce.",
+    title: "外贸AI",
+    description: "供应链、物流和国际商务相关的AI概念。",
     icon: Globe,
     color: "text-blue-600",
     bgColor: "bg-blue-50",
@@ -56,24 +56,24 @@ const industries = [
 
 const faqItems = [
   {
-    question: "What is a Large Language Model (LLM)?",
+    question: "什么是大语言模型（LLM）？",
     answer:
-      "A Large Language Model (LLM) is a type of AI model trained on vast text datasets to understand, generate, and reason with human language. Examples include GPT-4, Claude, and LLaMA.",
+      "大语言模型（LLM）是一种在大量文本数据集上训练的人工智能模型，用于理解、生成和推理人类语言。代表性模型包括GPT-4、Claude、LLaMA等。",
   },
   {
-    question: "What is the difference between AI and Machine Learning?",
+    question: "AI和机器学习有什么区别？",
     answer:
-      "Artificial Intelligence (AI) is the broad field of creating intelligent machines. Machine Learning (ML) is a subset of AI that enables systems to learn from data without being explicitly programmed.",
+      "人工智能（AI）是创造智能机器的广泛领域。机器学习（ML）是AI的一个子集，使系统能够从数据中学习而无需明确编程。",
   },
   {
-    question: "What is RAG (Retrieval-Augmented Generation)?",
+    question: "什么是RAG（检索增强生成）？",
     answer:
-      "Retrieval-Augmented Generation (RAG) is a technique that enhances LLM outputs by retrieving relevant information from external knowledge bases before generating responses, improving accuracy and reducing hallucinations.",
+      "检索增强生成（RAG）是一种通过在生成响应前从外部知识库检索相关信息来增强LLM输出的技术，可提高准确性并减少幻觉。",
   },
   {
-    question: "How are concepts organized?",
+    question: "概念是如何组织的？",
     answer:
-      "Concepts are organized by industry (General, Healthcare, Trade) and category. Each concept includes an English name, Chinese name, definition, and related terms for cross-referencing.",
+      "概念按行业（通用、医疗、外贸）和类别组织。每个概念包含英文名、中文名、定义和相关术语，便于交叉参考。",
   },
 ];
 
@@ -92,14 +92,14 @@ export default function ConceptsPage() {
             <Lightbulb className="h-8 w-8 text-amber-600" />
           </div>
           <Badge variant="secondary" className="mb-4">
-            Knowledge Base
+            概念库
           </Badge>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            AI Concepts Library
+            AI概念库
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-            A comprehensive glossary of AI terminology for healthcare and trade professionals.
-            Understand the concepts before adopting the technology.
+            为医疗和外贸专业人员提供的全面AI术语词汇表。
+            在采用技术之前先理解概念。
           </p>
         </div>
       </section>
@@ -109,10 +109,10 @@ export default function ConceptsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Browse by Industry
+              按行业浏览
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Concepts tailored to your domain.
+              针对您所在领域的概念。
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default function ConceptsPage() {
                     <div className="space-y-4">
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Layers className="h-4 w-4" />
-                        <span>{terms.length} terms across {categories.length} categories</span>
+                        <span>{terms.length} 个术语，涵盖 {categories.length} 个类别</span>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {categories.slice(0, 4).map((cat) => (
@@ -166,50 +166,50 @@ export default function ConceptsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Featured Concepts
+              精选概念
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Key terms every AI practitioner should know.
+              每个AI从业者都应该了解的关键术语。
             </p>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                term: "Large Language Model (LLM)",
-                category: "Core Concepts",
+                term: "大语言模型（LLM）",
+                category: "核心概念",
                 definition:
-                  "A type of AI model trained on vast text datasets to understand, generate, and reason with human language.",
+                  "在大量文本数据集上训练的人工智能模型，用于理解和生成人类语言。",
               },
               {
-                term: "Electronic Health Record (EHR)",
-                category: "Healthcare Systems",
+                term: "电子病历（EHR）",
+                category: "医疗系统",
                 definition:
-                  "A digital version of a patient's paper chart containing medical history, diagnoses, and treatment plans.",
+                  "患者纸质病历的数字版本，包含病史、诊断和治疗方案。",
               },
               {
-                term: "Supply Chain Optimization",
-                category: "Trade AI Applications",
+                term: "供应链优化",
+                category: "外贸AI应用",
                 definition:
-                  "The application of algorithms and AI to improve supply chain performance by reducing costs and increasing efficiency.",
+                  "通过算法和AI改善供应链性能，降低成本并提高效率。",
               },
               {
-                term: "Retrieval-Augmented Generation (RAG)",
-                category: "Core Concepts",
+                term: "检索增强生成（RAG）",
+                category: "核心概念",
                 definition:
-                  "A technique that enhances LLM outputs by retrieving relevant information from external knowledge bases.",
+                  "通过从外部知识库检索相关信息来增强LLM输出的技术。",
               },
               {
-                term: "Clinical Decision Support (CDS)",
-                category: "Healthcare Systems",
+                term: "临床决策支持（CDS）",
+                category: "医疗系统",
                 definition:
-                  "Health IT systems that analyze data to help healthcare providers make clinical decisions.",
+                  "分析数据以帮助医疗提供者做出临床决策的健康IT系统。",
               },
               {
-                term: "Demand Forecasting",
-                category: "Trade AI Applications",
+                term: "需求预测",
+                category: "外贸AI应用",
                 definition:
-                  "The process of using historical data and AI models to predict future customer demand.",
+                  "使用历史数据和AI模型预测未来客户需求的过程。",
               },
             ].map((item) => (
               <Card key={item.term} className="transition-all hover:shadow-md">
@@ -230,7 +230,7 @@ export default function ConceptsPage() {
 
       {/* FAQ */}
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <FAQSection items={faqItems} title="Concepts FAQ" />
+        <FAQSection items={faqItems} title="概念常见问题" />
       </div>
     </div>
   );

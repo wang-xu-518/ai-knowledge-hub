@@ -22,67 +22,67 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI Tools - AI Knowledge Hub",
+  title: "AI工具导航 - 企业AI架构师",
   description:
-    "Navigate AI tools for healthcare and trade. Compare features, pricing, and use cases.",
+    "AI工具导航：为医疗和外贸行业精选AI工具，比较功能、价格和适用场景，找到适合您的解决方案。",
 };
 
 const articleSchema = generateArticleSchema({
-  headline: "AI Tools Directory - AI Knowledge Hub",
+  headline: "AI工具导航 - 企业AI架构师",
   description:
-    "Navigate AI tools for healthcare and trade. Compare features, pricing, and use cases.",
+    "AI工具导航：为医疗和外贸行业精选AI工具，比较功能、价格和适用场景。",
   url: `${SITE_URL}/tools`,
   datePublished: "2024-01-01",
 });
 
 const healthcareTools = [
   {
-    name: "Diagnostic Imaging AI",
-    category: "Medical Imaging",
+    name: "医学影像AI",
+    category: "医学影像",
     description:
-      "AI-powered radiology tools that detect anomalies in X-rays, CT scans, and MRIs.",
+      "AI驱动的放射学工具，检测X光、CT和MRI中的异常。",
     icon: Zap,
-    useCase: "Primary care clinics, radiology departments",
+    useCase: "基层诊所，放射科",
   },
   {
-    name: "Clinical NLP Engine",
-    category: "Data Processing",
+    name: "临床NLP引擎",
+    category: "数据处理",
     description:
-      "Natural language processing tools for extracting insights from clinical notes and EHR data.",
+      "从临床笔记和EHR数据中提取洞察的自然语言处理工具。",
     icon: BarChart3,
-    useCase: "Health systems, research institutions",
+    useCase: "医疗系统，科研机构",
   },
 ];
 
 const tradeTools = [
   {
-    name: "Demand Forecasting Platform",
-    category: "Analytics",
+    name: "需求预测平台",
+    category: "分析",
     description:
-      "ML-powered demand prediction for inventory planning and supply chain optimization.",
+      "用于库存规划和供应链优化的ML驱动的需求预测。",
     icon: BarChart3,
-    useCase: "E-commerce, retail, manufacturing",
+    useCase: "电商，零售，制造",
   },
   {
-    name: "Customs Automation Suite",
-    category: "Compliance",
+    name: "海关自动化套件",
+    category: "合规",
     description:
-      "Automated HS code classification, sanctions screening, and customs documentation.",
+      "自动化的HS编码分类、制裁筛查和海关文档处理。",
     icon: Package,
-    useCase: "Importers, exporters, freight forwarders",
+    useCase: "进口商，出口商，货运代理",
   },
 ];
 
 const comparisonCategories = [
   {
-    title: "Healthcare AI Tools",
+    title: "医疗AI工具",
     icon: HeartPulse,
     color: "text-rose-600",
     bgColor: "bg-rose-50",
     tools: healthcareTools,
   },
   {
-    title: "Trade AI Tools",
+    title: "外贸AI工具",
     icon: Globe,
     color: "text-blue-600",
     bgColor: "bg-blue-50",
@@ -92,24 +92,24 @@ const comparisonCategories = [
 
 const faqItems = [
   {
-    question: "How are tools evaluated?",
+    question: "工具是如何评估的？",
     answer:
-      "We evaluate AI tools based on functionality, pricing transparency, ease of integration, compliance certifications (HIPAA, SOC 2), and real-world user feedback.",
+      "我们从功能、定价透明度、易于集成、合规认证（HIPAA、SOC 2）和真实用户反馈等方面评估AI工具。",
   },
   {
-    question: "What information is included for each tool?",
+    question: "每个工具包含哪些信息？",
     answer:
-      "Each tool page includes a feature overview, pricing details, applicable use cases, competitor comparisons, and a dedicated FAQ section.",
+      "每个工具页面包含功能概述、定价详情、适用场景、竞品比较和专门的FAQ部分。",
   },
   {
-    question: "Are these tools recommended for small businesses?",
+    question: "这些工具适合小型企业吗？",
     answer:
-      "We indicate the target business size for each tool. Many AI tools now offer tiered pricing suitable for small clinics and startups.",
+      "我们会标注每个工具的目标企业规模。许多AI工具现在提供适合小型诊所和初创企业的分层定价。",
   },
   {
-    question: "How often is the tools directory updated?",
+    question: "工具目录更新频率是多少？",
     answer:
-      "We review and update the directory quarterly to reflect new product launches, pricing changes, and user reviews.",
+      "我们每季度审查和更新目录，以反映新产品发布、价格变化和用户评价。",
   },
 ];
 
@@ -128,14 +128,14 @@ export default function ToolsPage() {
             <Wrench className="h-8 w-8 text-emerald-600" />
           </div>
           <Badge variant="secondary" className="mb-4">
-            Directory
+            工具导航
           </Badge>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            AI Tools Directory
+            AI工具导航
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Discover and compare AI tools for healthcare and trade.
-            Find the right solution for your specific needs.
+            为医疗和外贸行业发现和比较AI工具。
+            为您的特定需求找到正确的解决方案。
           </p>
         </div>
       </section>
@@ -145,10 +145,10 @@ export default function ToolsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Browse by Industry
+              按行业浏览
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Curated tools for healthcare and trade professionals.
+              为医疗和外贸专业人员精选的工具。
             </p>
           </div>
 
@@ -193,7 +193,7 @@ export default function ToolsPage() {
                           <CardContent>
                             <div className="flex items-center gap-2 text-xs text-muted-foreground">
                               <Users className="h-3.5 w-3.5" />
-                              <span>Use case: {tool.useCase}</span>
+                              <span>适用场景：{tool.useCase}</span>
                             </div>
                           </CardContent>
                         </Card>
@@ -214,33 +214,33 @@ export default function ToolsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Evaluation Criteria
+              评估标准
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              How we assess and categorize AI tools.
+              我们如何评估和分类AI工具。
             </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                title: "Functionality",
-                description: "Core features and capabilities",
+                title: "功能",
+                description: "核心功能和能力",
                 icon: Zap,
               },
               {
-                title: "Pricing",
-                description: "Transparent cost structures",
+                title: "定价",
+                description: "透明的成本结构",
                 icon: DollarSign,
               },
               {
-                title: "Use Cases",
-                description: "Applicable scenarios and industries",
+                title: "适用场景",
+                description: "适用场景和行业",
                 icon: Users,
               },
               {
-                title: "Compliance",
-                description: "Security and regulatory certifications",
+                title: "合规",
+                description: "安全和监管认证",
                 icon: BarChart3,
               },
             ].map((item) => {
@@ -263,7 +263,7 @@ export default function ToolsPage() {
 
       {/* FAQ */}
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <FAQSection items={faqItems} title="Tools Directory FAQ" />
+        <FAQSection items={faqItems} title="工具导航常见问题" />
       </div>
     </div>
   );

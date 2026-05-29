@@ -22,41 +22,41 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Healthcare AI - AI Knowledge Hub",
+  title: "医疗AI - 企业AI架构师",
   description:
-    "Discover AI applications in healthcare: clinical decision support, medical imaging, drug discovery, and telemedicine for primary care providers.",
+    "医疗AI落地解决方案：AI辅助诊断、智能导诊、病历质控、医疗知识库。基于10年医疗信息化经验，帮助医疗机构实现AI转型。",
 };
 
 const articleSchema = generateArticleSchema({
-  headline: "Healthcare AI - AI Knowledge Hub",
+  headline: "医疗AI落地 - 企业AI架构师",
   description:
-    "Discover AI applications in healthcare for primary care providers.",
+    "医疗AI落地解决方案：AI辅助诊断、智能导诊、病历质控、医疗知识库。",
   url: `${SITE_URL}/healthcare`,
   datePublished: "2024-01-01",
 });
 
 const sections = [
   {
-    title: "AI Tools",
-    description: "Navigate AI-powered tools for diagnostics, patient monitoring, and clinical workflows.",
+    title: "AI工具",
+    description: "发现适用于诊断、患者监护和临床工作流的AI工具。",
     icon: Stethoscope,
     href: "/healthcare/ai-tools",
   },
   {
-    title: "Concepts",
-    description: "Learn key healthcare AI concepts: EHR, CDS, medical imaging, and compliance.",
+    title: "概念",
+    description: "学习医疗AI核心概念：电子病历、临床决策支持、医学影像、合规要求。",
     icon: Brain,
     href: "/healthcare/concepts",
   },
   {
-    title: "Guides",
-    description: "Step-by-step guides for implementing AI in primary care settings.",
+    title: "指南",
+    description: "在医疗机构中实施AI的分步指南。",
     icon: BookOpen,
     href: "/healthcare/guides",
   },
   {
-    title: "Cases",
-    description: "Real-world case studies of AI adoption in healthcare organizations.",
+    title: "案例",
+    description: "医疗机构AI落地的真实案例。",
     icon: FolderOpen,
     href: "/healthcare/cases",
   },
@@ -64,42 +64,42 @@ const sections = [
 
 const highlights = [
   {
-    title: "Clinical Decision Support (CDS)",
+    title: "临床决策支持（CDS）",
     description:
-      "AI systems that analyze patient data to assist providers with diagnosis and treatment recommendations.",
+      "分析患者数据以协助医生进行诊断和治疗建议的AI系统。",
   },
   {
-    title: "Medical Imaging AI",
+    title: "医学影像AI",
     description:
-      "Computer vision models that detect abnormalities in X-rays, CT scans, and MRIs with radiologist-level accuracy.",
+      "在X光、CT、MRI中检测异常的人工智能模型，准确率接近放射科医生水平。",
   },
   {
-    title: "HIPAA-Compliant Solutions",
+    title: "合规解决方案",
     description:
-      "AI tools designed with health data privacy in mind, ensuring PHI protection and regulatory compliance.",
+      "以健康数据隐私为核心设计的AI工具，确保患者信息保护和监管合规。",
   },
 ];
 
 const faqItems = [
   {
-    question: "What is Clinical Decision Support (CDS)?",
+    question: "什么是临床决策支持（CDS）？",
     answer:
-      "Clinical Decision Support (CDS) refers to health IT systems that analyze data to help healthcare providers make clinical decisions, including alerts, reminders, and diagnostic suggestions.",
+      "临床决策支持（CDS）是指分析数据以帮助医疗提供者做出临床决策的健康信息系统，包括警报、提醒和诊断建议。",
   },
   {
-    question: "How does AI improve medical imaging?",
+    question: "AI如何改善医学影像？",
     answer:
-      "AI-powered medical imaging uses computer vision to analyze X-rays, CT scans, and MRIs, helping radiologists detect abnormalities faster and with greater accuracy.",
+      "AI医学影像利用计算机视觉分析X光、CT和MRI，帮助放射科医生更快、更准确地检测异常。",
   },
   {
-    question: "Is AI in healthcare HIPAA-compliant?",
+    question: "医疗AI是否符合数据安全合规？",
     answer:
-      "Many AI healthcare solutions are designed to be HIPAA-compliant, but it's essential to verify each vendor's data handling practices, encryption standards, and Business Associate Agreements (BAAs).",
+      "许多医疗AI解决方案都设计为符合合规要求，但必须验证每个供应商的数据处理实践、加密标准和业务合作协议。",
   },
   {
-    question: "What is the ROI of AI for primary care?",
+    question: "基层医疗AI的投资回报率如何？",
     answer:
-      "According to industry studies, AI implementation in primary care can reduce administrative burden by 30-40% and improve diagnostic accuracy by 15-25%, depending on the use case.",
+      "根据行业研究，基层医疗中的AI实施可以减少30-40%的管理负担，并将诊断准确率提高15-25%，具体取决于使用场景。",
   },
 ];
 
@@ -118,14 +118,14 @@ export default function HealthcarePage() {
             <HeartPulse className="h-8 w-8 text-rose-600" />
           </div>
           <Badge variant="secondary" className="mb-4">
-            Healthcare
+            医疗AI
           </Badge>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            Healthcare AI
+            医疗AI落地
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-            AI solutions designed for primary care providers, clinics, and healthcare administrators.
-            Improve patient outcomes and operational efficiency.
+            专为基层医疗机构、诊所和医院管理者设计的AI解决方案。
+            改善患者治疗效果，提升运营效率。
           </p>
         </div>
       </section>
@@ -135,11 +135,11 @@ export default function HealthcarePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Explore Healthcare AI
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Browse tools, concepts, guides, and real-world cases.
-            </p>
+            探索医疗AI
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            浏览工具、概念、指南和真实案例。
+          </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
@@ -158,7 +158,7 @@ export default function HealthcarePage() {
                     <CardDescription>{section.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Link href={section.href} className="inline-flex items-center justify-center rounded-lg border border-input bg-background hover:bg-muted hover:text-foreground px-3 py-1.5 text-sm font-medium">Explore <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href={section.href} className="inline-flex items-center justify-center rounded-lg border border-input bg-background hover:bg-muted hover:text-foreground px-3 py-1.5 text-sm font-medium">探索 <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </CardContent>
                 </Card>
               );
@@ -174,11 +174,11 @@ export default function HealthcarePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Key Focus Areas
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Essential AI applications transforming healthcare delivery.
-            </p>
+            核心关注领域
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            正在改变医疗服务交付的关键AI应用。
+          </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -199,7 +199,7 @@ export default function HealthcarePage() {
 
       {/* FAQ */}
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <FAQSection items={faqItems} title="Healthcare AI FAQ" />
+        <FAQSection items={faqItems} title="医疗AI常见问题" />
       </div>
     </div>
   );

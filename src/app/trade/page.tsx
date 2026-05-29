@@ -22,41 +22,41 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Trade AI - AI Knowledge Hub",
+  title: "外贸AI - 企业AI架构师",
   description:
-    "Discover AI applications in international trade: supply chain optimization, demand forecasting, cross-border e-commerce, and customs compliance.",
+    "外贸企业AI解决方案：AI翻译、智能客服、市场分析、供应链优化。帮助外贸企业实现AI驱动的跨境业务增长。",
 };
 
 const articleSchema = generateArticleSchema({
-  headline: "Trade AI - AI Knowledge Hub",
+  headline: "外贸AI解决方案 - 企业AI架构师",
   description:
-    "Discover AI applications in international trade and cross-border e-commerce.",
+    "外贸企业AI解决方案：AI翻译、智能客服、市场分析、供应链优化。",
   url: `${SITE_URL}/trade`,
   datePublished: "2024-01-01",
 });
 
 const sections = [
   {
-    title: "AI Tools",
-    description: "Navigate AI-powered tools for logistics, CRM, marketing automation, and analytics.",
+    title: "AI工具",
+    description: "发现适用于物流、CRM、营销自动化和分析的AI工具。",
     icon: Wrench,
     href: "/trade/ai-tools",
   },
   {
-    title: "Concepts",
-    description: "Learn key trade AI concepts: supply chain, demand forecasting, and compliance.",
+    title: "概念",
+    description: "学习外贸AI核心概念：供应链、需求预测和合规。",
     icon: Brain,
     href: "/trade/concepts",
   },
   {
-    title: "Guides",
-    description: "Step-by-step guides for integrating AI into trade operations.",
+    title: "指南",
+    description: "将AI集成到外贸业务中的分步指南。",
     icon: BookOpen,
     href: "/trade/guides",
   },
   {
-    title: "Cases",
-    description: "Real-world case studies of AI adoption in trade and e-commerce.",
+    title: "案例",
+    description: "外贸和电商领域AI落地的真实案例。",
     icon: FolderOpen,
     href: "/trade/cases",
   },
@@ -64,42 +64,42 @@ const sections = [
 
 const highlights = [
   {
-    title: "Supply Chain Optimization",
+    title: "供应链优化",
     description:
-      "AI algorithms that reduce logistics costs by 15-30% through route optimization, inventory balancing, and demand prediction.",
+      "通过路线优化、库存平衡和需求预测，将物流成本降低15-30%的AI算法。",
   },
   {
-    title: "Demand Forecasting",
+    title: "需求预测",
     description:
-      "Machine learning models that analyze historical data and market signals to predict future demand with 85-95% accuracy.",
+      "分析历史数据和市场信号，以85-95%的准确率预测未来需求的机器学习模型。",
   },
   {
-    title: "Customs & Compliance",
+    title: "海关与合规",
     description:
-      "Automated sanctions screening, tariff classification, and trade compliance verification using NLP and rules engines.",
+      "使用NLP和规则引擎实现自动化的制裁筛查、关税分类和贸易合规验证。",
   },
 ];
 
 const faqItems = [
   {
-    question: "How does AI optimize supply chains?",
+    question: "AI如何优化供应链？",
     answer:
-      "AI optimizes supply chains by analyzing historical data, weather patterns, and market trends to predict demand, optimize inventory levels, and recommend the most efficient shipping routes.",
+      "AI通过分析历史数据、天气模式和市场趋势来预测需求、优化库存水平并推荐最高效的运输路线，从而优化供应链。",
   },
   {
-    question: "What is demand forecasting in trade?",
+    question: "外贸中的需求预测是什么？",
     answer:
-      "Demand forecasting uses machine learning to predict future customer demand based on historical sales data, seasonality, and external factors, enabling better inventory and production planning.",
+      "需求预测使用机器学习基于历史销售数据、季节性和外部因素预测未来客户需求，从而实现更好的库存和生产规划。",
   },
   {
-    question: "Can AI help with customs clearance?",
+    question: "AI可以帮助海关清关吗？",
     answer:
-      "Yes, AI-powered customs tools can automate HS code classification, flag potential compliance issues, and streamline documentation, reducing clearance time by up to 50%.",
+      "是的，AI驱动的海关工具可以自动化HS编码分类、标记潜在合规问题并简化文档处理，将清关时间缩短多达50%。",
   },
   {
-    question: "What is the ROI of AI for cross-border e-commerce?",
+    question: "跨境电商AI的投资回报率如何？",
     answer:
-      "According to industry data, AI implementation in cross-border e-commerce can increase conversion rates by 20-35% and reduce operational costs by 25-40%.",
+      "根据行业数据，跨境电商中的AI实施可以将转化率提高20-35%，并将运营成本降低25-40%。",
   },
 ];
 
@@ -118,14 +118,14 @@ export default function TradePage() {
             <Globe className="h-8 w-8 text-blue-600" />
           </div>
           <Badge variant="secondary" className="mb-4">
-            International Trade
+            外贸AI
           </Badge>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            Trade AI
+            外贸AI解决方案
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-            AI solutions for exporters, importers, and cross-border e-commerce operators.
-            Optimize your supply chain and accelerate global growth.
+            为出口商、进口商和跨境电商运营者提供的AI解决方案。
+            优化供应链，加速全球业务增长。
           </p>
         </div>
       </section>
@@ -135,11 +135,11 @@ export default function TradePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Explore Trade AI
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Browse tools, concepts, guides, and real-world cases.
-            </p>
+            探索外贸AI
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            浏览工具、概念、指南和真实案例。
+          </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
@@ -158,7 +158,7 @@ export default function TradePage() {
                     <CardDescription>{section.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Link href={section.href} className="inline-flex items-center justify-center rounded-lg border border-input bg-background hover:bg-muted hover:text-foreground px-3 py-1.5 text-sm font-medium">Explore <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href={section.href} className="inline-flex items-center justify-center rounded-lg border border-input bg-background hover:bg-muted hover:text-foreground px-3 py-1.5 text-sm font-medium">探索 <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </CardContent>
                 </Card>
               );
@@ -174,11 +174,11 @@ export default function TradePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Key Focus Areas
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Essential AI applications transforming international trade.
-            </p>
+            核心关注领域
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            正在改变国际贸易的关键AI应用。
+          </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -199,7 +199,7 @@ export default function TradePage() {
 
       {/* FAQ */}
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <FAQSection items={faqItems} title="Trade AI FAQ" />
+        <FAQSection items={faqItems} title="外贸AI常见问题" />
       </div>
     </div>
   );

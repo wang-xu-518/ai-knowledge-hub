@@ -4,11 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/healthcare", label: "Healthcare" },
-  { href: "/trade", label: "Trade" },
-  { href: "/concepts", label: "Concepts" },
-  { href: "/tools", label: "Tools" },
+  { href: "/", label: "首页" },
+  { href: "/about", label: "关于我" },
+  { href: "/services", label: "服务" },
+  { href: "/healthcare", label: "医疗AI" },
+  { href: "/trade", label: "外贸AI" },
+  { href: "/concepts", label: "AI概念" },
+  { href: "/tools", label: "工具" },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -25,7 +27,7 @@ export default function Navigation() {
             className="flex items-center gap-2 font-semibold text-foreground"
           >
             <span className="text-lg">🧠</span>
-            <span className="hidden sm:inline">AI Knowledge Hub</span>
+            <span className="hidden sm:inline">企业AI架构师</span>
           </Link>
 
           {/* Desktop Nav */}
