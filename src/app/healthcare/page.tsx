@@ -33,7 +33,6 @@ const articleSchema = generateArticleSchema({
     "Discover AI applications in healthcare for primary care providers.",
   url: `${SITE_URL}/healthcare`,
   datePublished: "2024-01-01",
-  dateModified: "2024-01-01",
 });
 
 const sections = [

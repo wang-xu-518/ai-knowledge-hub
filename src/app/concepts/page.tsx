@@ -25,7 +25,6 @@ const articleSchema = generateArticleSchema({
     "Comprehensive AI concept library covering general AI, healthcare AI, and trade AI terminology.",
   url: `${SITE_URL}/concepts`,
   datePublished: "2024-01-01",
-  dateModified: "2024-01-01",
 });
 
 const industries = [

@@ -33,7 +33,6 @@ const articleSchema = generateArticleSchema({
     "Navigate AI tools for healthcare and trade. Compare features, pricing, and use cases.",
   url: `${SITE_URL}/tools`,
   datePublished: "2024-01-01",
-  dateModified: "2024-01-01",
 });
 
 const healthcareTools = [

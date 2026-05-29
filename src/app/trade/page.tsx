@@ -33,7 +33,6 @@ const articleSchema = generateArticleSchema({
     "Discover AI applications in international trade and cross-border e-commerce.",
   url: `${SITE_URL}/trade`,
   datePublished: "2024-01-01",
-  dateModified: "2024-01-01",
 });
 
 const sections = [

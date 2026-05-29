@@ -1,4 +1,5 @@
 export const SITE_URL = "https://myinai.com";
+export const LAST_UPDATED = new Date().toISOString().split("T")[0];
 /**
  * JSON-LD Structured Data Generators
  * Supports: Article, FAQPage, HowTo, BreadcrumbList
@@ -52,13 +53,15 @@ export function generateArticleSchema(input: ArticleSchemaInput) {
     url: input.url,
     datePublished: input.datePublished,
     author: {
-      "@type": "Organization",
-      name: input.authorName || "AI Knowledge Hub",
+      "@type": "Person",
+      name: input.authorName || "AI Knowledge Hub Editorial Team",
       url: input.authorUrl || SITE_URL,
+      jobTitle: "AI Education Specialist",
     },
     publisher: {
       "@type": "Organization",
       name: input.publisherName || "AI Knowledge Hub",
+      url: SITE_URL,
       logo: {
         "@type": "ImageObject",
         url: input.publisherLogo || `${SITE_URL}/logo.png`,
@@ -70,9 +73,14 @@ export function generateArticleSchema(input: ArticleSchemaInput) {
     schema.image = input.image;
   }
 
-  if (input.dateModified) {
-    schema.dateModified = input.dateModified;
-  }
+  schema.dateModified = input.dateModified || LAST_UPDATED;
+
+  // SpeakableSpecification for AI citation
+  schema.speakable = {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", "h2", ".faq-item question"],
+    xpath: "/html/head/title",
+  };
 
   return schema;
 }

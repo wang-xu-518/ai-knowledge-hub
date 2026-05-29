@@ -31,7 +31,6 @@ const articleSchema = generateArticleSchema({
     "Industry-leading AI knowledge hub for healthcare providers and trade professionals.",
   url: SITE_URL,
   datePublished: "2024-01-01",
-  dateModified: "2024-01-01",
 });
 
 const industries = [
