@@ -1,4 +1,4 @@
-export const SITE_URL = "https://ai-knowledge-hub-3ts.pages.dev";
+export const SITE_URL = "https://myinai.com";
 /**
  * JSON-LD Structured Data Generators
  * Supports: Article, FAQPage, HowTo, BreadcrumbList

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ai-knowledge-hub-3ts.pages.dev"
+  const baseUrl = "https://myinai.com"
   
   const routes = [
     "",

@@ -6,10 +6,10 @@ import Navigation from "@/components/navigation";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-const SITE_URL = "https://ai-knowledge-hub-3ts.pages.dev";
+const SITE_URL = "https://myinai.com";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL("https://myinai.com"),
   title: {
     default: "AI Knowledge Hub - AI for Healthcare & Trade",
     template: "%s | AI Knowledge Hub",
