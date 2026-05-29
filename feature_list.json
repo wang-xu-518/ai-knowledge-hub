@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "title": "AI Knowledge Hub - 功能清单",
+  "project": "ai-knowledge-hub",
+  "features": [
+    {
+      "id": "foundation",
+      "name": "基础框架搭建",
+      "status": "in_progress",
+      "tasks": [
+        {
+          "id": "f-1",
+          "name": "初始化 Next.js 14 项目",
+          "status": "passing",
+          "verify": "ls -la && cat package.json | grep next"
+        },
+        {
+          "id": "f-2",
+          "name": "配置 Tailwind + Shadcn/ui",
+          "status": "passing",
+          "verify": "grep -q tailwind tailwind.config.ts && grep -q shadcn components.json"
+        },
+        {
+          "id": "f-3",
+          "name": "配置 JSON-LD 结构化数据",
+          "status": "passing",
+          "verify": "ls lib/schema.ts"
+        },
+        {
+          "id": "f-4",
+          "name": "配置 MDX 内容支持",
+          "status": "passing",
+          "verify": "grep -q @next/mdx next.config.js"
+        }
+      ]
+    },
+    {
+      "id": "content-structure",
+      "name": "内容结构",
+      "status": "passing",
+      "tasks": [
+        {
+          "id": "c-1",
+          "name": "创建概念文章模板",
+          "status": "passing",
+          "verify": "ls content/templates/concept-template.mdx"
+        },
+        {
+          "id": "c-2",
+          "name": "创建工具导航模板",
+          "status": "passing",
+          "verify": "ls content/templates/tool-template.mdx"
+        },
+        {
+          "id": "c-3",
+          "name": "创建术语表",
+          "status": "passing",
+          "verify": "ls lib/terms.ts"
+        }
+      ]
+    },
+    {
+      "id": "page-structure",
+      "name": "页面结构",
+      "status": "in_progress",
+      "tasks": [
+        {
+          "id": "p-1",
+          "name": "首页 + 行业入口",
+          "status": "passing",
+          "verify": "ls app/page.tsx"
+        },
+        {
+          "id": "p-2",
+          "name": "医疗AI页面 /healthcare/*",
+          "status": "passing",
+          "verify": "ls app/healthcare/page.tsx"
+        },
+        {
+          "id": "p-3",
+          "name": "外贸AI页面 /trade/*",
+          "status": "passing",
+          "verify": "ls app/trade/page.tsx"
+        },
+        {
+          "id": "p-4",
+          "name": "概念库 /concepts/*",
+          "status": "passing",
+          "verify": "ls app/concepts/page.tsx"
+        },
+        {
+          "id": "p-5",
+          "name": "工具导航 /tools/*",
+          "status": "passing",
+          "verify": "ls app/tools/page.tsx"
+        },
+        {
+          "id": "p-6",
+          "name": "FAQ聚合页 /faq/*",
+          "status": "passing",
+          "verify": "ls app/faq/page.tsx"
+        }
+      ]
+    },
+    {
+      "id": "initial-content",
+      "name": "初始内容填充",
+      "status": "in_progress",
+      "tasks": [
+        {
+          "id": "i-1",
+          "name": "医疗核心概念5篇",
+          "status": "passing",
+          "verify": "ls content/healthcare/concepts/ | wc -l"
+        },
+        {
+          "id": "i-2",
+          "name": "外贸核心概念5篇",
+          "status": "passing",
+          "verify": "ls content/trade/concepts/ | wc -l"
+        },
+        {
+          "id": "i-3",
+          "name": "通用AI概念5篇",
+          "status": "passing",
+          "verify": "ls content/concepts/ | wc -l"
+        },
+        {
+          "id": "i-4",
+          "name": "医疗AI工具5款",
+          "status": "passing",
+          "verify": "ls content/healthcare/tools/ | wc -l"
+        },
+        {
+          "id": "i-5",
+          "name": "外贸AI工具5款",
+          "status": "passing",
+          "verify": "ls content/trade/tools/ | wc -l"
+        }
+      ]
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO/GEO优化",
+      "status": "passing",
+      "tasks": [
+        {
+          "id": "sg-1",
+          "name": "所有文章JSON-LD配置",
+          "status": "passing",
+          "verify": "grep -r 'schema.org' components/ | wc -l"
+        },
+        {
+          "id": "sg-2",
+          "name": "FAQ Schema 注入",
+          "status": "passing",
+          "verify": "grep -r 'FAQPage' components/ | wc -l"
+        },
+        {
+          "id": "sg-3",
+          "name": "sitemap + robots.txt",
+          "status": "passing",
+          "verify": "ls app/sitemap.ts && ls app/robots.ts"
+        }
+      ]
+    }
+  ]
+}

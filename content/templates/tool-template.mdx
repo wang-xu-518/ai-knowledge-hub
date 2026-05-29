@@ -1,0 +1,140 @@
+---
+title: "{{Tool Name}}"
+description: "{{Brief description of the tool for SEO (120-160 characters).}}"
+slug: "{{tool-slug}}"
+datePublished: "{{YYYY-MM-DD}}"
+dateModified: "{{YYYY-MM-DD}}"
+industry: "{{healthcare | trade | general}}"
+category: "{{Category (e.g., Diagnostics, Content Generation, CRM)}}"
+vendor: "{{Vendor / Company Name}}"
+tags: ["{{tag1}}", "{{tag2}}", "{{tag3}}"]
+author: "AI Knowledge Hub"
+---
+
+import { generateArticleSchema, generateFAQSchema, injectJSONLD } from "@/lib/schema";
+
+export const articleSchema = generateArticleSchema({
+  headline: "{{Tool Name}}",
+  description: "{{Brief description}}",
+  url: "https://aiknowledgehub.com/{{industry}}/ai-tools/{{tool-slug}}",
+  datePublished: "{{YYYY-MM-DD}}",
+  dateModified: "{{YYYY-MM-DD}}",
+});
+
+export const faqSchema = generateFAQSchema([
+  {
+    question: "{{Question 1}}",
+    answer: "{{Answer 1}}",
+  },
+  {
+    question: "{{Question 2}}",
+    answer: "{{Answer 2}}",
+  },
+  {
+    question: "{{Question 3}}",
+    answer: "{{Answer 3}}",
+  },
+]);
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: injectJSONLD(articleSchema) }}
+/>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: injectJSONLD(faqSchema) }}
+/>
+
+# {{Tool Name}}
+
+**Vendor**: {{Vendor Name}}  
+**Category**: {{Category}}  
+**Industry**: {{Healthcare | Trade | General}}  
+**Website**: [{{vendor.com}}](https://{{vendor.com}})
+
+{{Provide a 2–3 sentence overview of what the tool does and its primary value proposition. Define any technical terms on first use.}}
+
+---
+
+## Features
+
+| Feature | Description | Best For |
+|---------|-------------|----------|
+| {{Feature 1}} | {{Brief description}} | {{Use case}} |
+| {{Feature 2}} | {{Brief description}} | {{Use case}} |
+| {{Feature 3}} | {{Brief description}} | {{Use case}} |
+| {{Feature 4}} | {{Brief description}} | {{Use case}} |
+
+### Key Capabilities
+
+- **{{Capability 1}}**: {{Description}}
+- **{{Capability 2}}**: {{Description}}
+- **{{Capability 3}}**: {{Description}}
+
+---
+
+## Pricing
+
+| Tier | Price | Includes | Best For |
+|------|-------|----------|----------|
+| **Free / Trial** | {{$0 / limited trial}} | {{Features included}} | {{Individual evaluation}} |
+| **Starter** | {{$X/month}} | {{Features included}} | {{Small teams / clinics}} |
+| **Professional** | {{$Y/month}} | {{Features included}} | {{Mid-size organizations}} |
+| **Enterprise** | {{Custom pricing}} | {{Features included}} | {{Large organizations}} |
+
+{{Note any annual discounts, implementation fees, or data volume limits.}}
+
+> **Data Source**: Pricing verified as of {{Month Year}}. Always confirm current pricing on the vendor's website.
+
+---
+
+## Use Cases
+
+### {{Use Case 1}}
+{{Describe a specific scenario, the actors involved, and the outcome.}}
+
+### {{Use Case 2}}
+{{Describe a specific scenario, the actors involved, and the outcome.}}
+
+### {{Use Case 3}}
+{{Describe a specific scenario, the actors involved, and the outcome.}}
+
+---
+
+## Competitor Comparison
+
+| Criteria | {{Tool Name}} | {{Competitor A}} | {{Competitor B}} | {{Competitor C}} |
+|----------|---------------|------------------|------------------|------------------|
+| **Starting Price** | {{$X}} | {{$Y}} | {{$Z}} | {{$W}} |
+| **Free Trial** | {{Yes / No}} | {{Yes / No}} | {{Yes / No}} | {{Yes / No}} |
+| **API Access** | {{Yes / No}} | {{Yes / No}} | {{Yes / No}} | {{Yes / No}} |
+| **HIPAA / SOC2** | {{Yes / No}} | {{Yes / No}} | {{Yes / No}} | {{Yes / No}} |
+| **Best For** | {{Segment}} | {{Segment}} | {{Segment}} | {{Segment}} |
+
+### Key Differentiators
+
+- **{{Tool Name}}**: {{Key strength}}
+- **{{Competitor A}}**: {{Key strength}}
+- **{{Competitor B}}**: {{Key strength}}
+
+---
+
+## FAQ
+
+### {{Question 1}}
+{{Answer 1}}
+
+### {{Question 2}}
+{{Answer 2}}
+
+### {{Question 3}}
+{{Answer 3}}
+
+---
+
+## Related Tools
+
+- [{{Related Tool 1}}](/{{industry}}/ai-tools/{{related-slug-1}})
+- [{{Related Tool 2}}](/{{industry}}/ai-tools/{{related-slug-2}})
+- [{{Related Tool 3}}](/{{industry}}/ai-tools/{{related-slug-3}})

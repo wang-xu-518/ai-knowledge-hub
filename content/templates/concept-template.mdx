@@ -1,0 +1,105 @@
+---
+title: "{{Concept Name}}"
+description: "{{Brief description of the concept for SEO (120-160 characters).}}"
+slug: "{{concept-slug}}"
+datePublished: "{{YYYY-MM-DD}}"
+dateModified: "{{YYYY-MM-DD}}"
+industry: "{{healthcare | trade | general}}"
+tags: ["{{tag1}}", "{{tag2}}", "{{tag3}}"]
+author: "AI Knowledge Hub"
+---
+
+import { generateArticleSchema, generateFAQSchema, injectJSONLD } from "@/lib/schema";
+
+export const articleSchema = generateArticleSchema({
+  headline: "{{Concept Name}}",
+  description: "{{Brief description}}",
+  url: "https://aiknowledgehub.com/concepts/{{concept-slug}}",
+  datePublished: "{{YYYY-MM-DD}}",
+  dateModified: "{{YYYY-MM-DD}}",
+});
+
+export const faqSchema = generateFAQSchema([
+  {
+    question: "{{Question 1}}",
+    answer: "{{Answer 1}}",
+  },
+  {
+    question: "{{Question 2}}",
+    answer: "{{Answer 2}}",
+  },
+  {
+    question: "{{Question 3}}",
+    answer: "{{Answer 3}}",
+  },
+]);
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: injectJSONLD(articleSchema) }}
+/>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: injectJSONLD(faqSchema) }}
+/>
+
+# {{Concept Name}}
+
+**Definition**: {{Provide a clear, concise definition (1–2 sentences). Define any technical terms on first use.}}
+
+> **Example**: "{{Natural Language Processing (NLP)}}" is defined as {{the branch of AI that enables machines to understand, interpret, and generate human language.}}
+
+---
+
+## Why It Matters
+
+{{Explain the business or clinical impact (2–3 paragraphs).}}
+
+- **For Healthcare**: {{Describe impact on patient outcomes, clinical workflows, or regulatory compliance.}}
+- **For Trade**: {{Describe impact on supply chain, customer acquisition, or compliance.}}
+
+{{Cite data sources where applicable:}}
+> According to {{Gartner / IDC / Official Source}}, {{relevant statistic with year}}.
+
+---
+
+## How to Implement
+
+{{Provide a practical, step-by-step guide (3–5 steps). Use clear HTML semantic structure.}}
+
+### Step 1: {{Assessment & Goal Setting}}
+{{Describe the first step. Identify stakeholders, define KPIs, and assess data readiness.}}
+
+### Step 2: {{Tool & Vendor Selection}}
+{{Describe the second step. Evaluate vendors against security, integration, and pricing criteria.}}
+
+### Step 3: {{Pilot Program}}
+{{Describe the third step. Run a limited pilot with a small user group. Measure against KPIs.}}
+
+### Step 4: {{Integration & Training}}
+{{Describe the fourth step. Integrate with existing systems (EHR, CRM, ERP). Train end users.}}
+
+### Step 5: {{Scale & Optimize}}
+{{Describe the fifth step. Roll out organization-wide. Continuously monitor and iterate.}}
+
+---
+
+## FAQ
+
+### {{Question 1}}
+{{Answer 1}}
+
+### {{Question 2}}
+{{Answer 2}}
+
+### {{Question 3}}
+{{Answer 3}}
+
+---
+
+## Related Concepts
+
+- [{{Related Concept 1}}](/concepts/{{related-slug-1}})
+- [{{Related Concept 2}}](/concepts/{{related-slug-2}})
+- [{{Related Concept 3}}](/concepts/{{related-slug-3}})
