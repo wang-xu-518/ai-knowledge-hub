@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://ai-knowledge-hub.pages.dev/sitemap.xml",
+    sitemap: "https://ai-knowledge-hub-3ts.pages.dev/sitemap.xml",
   }
 }

@@ -10,7 +10,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import FAQSection from "@/components/content/FAQSection";
-import { generateArticleSchema } from "@/lib/schema";
+import { SITE_URL, generateArticleSchema } from "@/lib/schema";
 import {
   HeartPulse,
   Stethoscope,
@@ -31,7 +31,7 @@ const articleSchema = generateArticleSchema({
   headline: "Healthcare AI - AI Knowledge Hub",
   description:
     "Discover AI applications in healthcare for primary care providers.",
-  url: "https://aiknowledgehub.com/healthcare",
+  url: `${SITE_URL}/healthcare`,
   datePublished: "2024-01-01",
   dateModified: "2024-01-01",
 });

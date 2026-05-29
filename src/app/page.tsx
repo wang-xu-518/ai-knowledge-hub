@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import FAQSection from "@/components/content/FAQSection";
-import { generateArticleSchema } from "@/lib/schema";
+import { SITE_URL, generateArticleSchema } from "@/lib/schema";
 import {
   HeartPulse,
   Globe,
@@ -29,7 +29,7 @@ const articleSchema = generateArticleSchema({
   headline: "AI Knowledge Hub - AI for Healthcare & Trade",
   description:
     "Industry-leading AI knowledge hub for healthcare providers and trade professionals.",
-  url: "https://aiknowledgehub.com",
+  url: SITE_URL,
   datePublished: "2024-01-01",
   dateModified: "2024-01-01",
 });

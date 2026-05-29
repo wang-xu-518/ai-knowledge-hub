@@ -9,7 +9,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import FAQSection from "@/components/content/FAQSection";
-import { generateArticleSchema } from "@/lib/schema";
+import { SITE_URL, generateArticleSchema } from "@/lib/schema";
 import { getTermsByIndustry } from "@/lib/terms";
 import { Lightbulb, HeartPulse, Globe, Layers } from "lucide-react";
 
@@ -23,7 +23,7 @@ const articleSchema = generateArticleSchema({
   headline: "AI Concepts Library - AI Knowledge Hub",
   description:
     "Comprehensive AI concept library covering general AI, healthcare AI, and trade AI terminology.",
-  url: "https://aiknowledgehub.com/concepts",
+  url: `${SITE_URL}/concepts`,
   datePublished: "2024-01-01",
   dateModified: "2024-01-01",
 });

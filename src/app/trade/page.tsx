@@ -10,7 +10,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import FAQSection from "@/components/content/FAQSection";
-import { generateArticleSchema } from "@/lib/schema";
+import { SITE_URL, generateArticleSchema } from "@/lib/schema";
 import {
   Globe,
   Wrench,
@@ -31,7 +31,7 @@ const articleSchema = generateArticleSchema({
   headline: "Trade AI - AI Knowledge Hub",
   description:
     "Discover AI applications in international trade and cross-border e-commerce.",
-  url: "https://aiknowledgehub.com/trade",
+  url: `${SITE_URL}/trade`,
   datePublished: "2024-01-01",
   dateModified: "2024-01-01",
 });

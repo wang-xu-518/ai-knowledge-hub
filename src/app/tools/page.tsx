@@ -9,7 +9,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import FAQSection from "@/components/content/FAQSection";
-import { generateArticleSchema } from "@/lib/schema";
+import { SITE_URL, generateArticleSchema } from "@/lib/schema";
 import {
   Wrench,
   HeartPulse,
@@ -31,7 +31,7 @@ const articleSchema = generateArticleSchema({
   headline: "AI Tools Directory - AI Knowledge Hub",
   description:
     "Navigate AI tools for healthcare and trade. Compare features, pricing, and use cases.",
-  url: "https://aiknowledgehub.com/tools",
+  url: `${SITE_URL}/tools`,
   datePublished: "2024-01-01",
   dateModified: "2024-01-01",
 });

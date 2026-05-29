@@ -1,3 +1,4 @@
+export const SITE_URL = "https://ai-knowledge-hub-3ts.pages.dev";
 /**
  * JSON-LD Structured Data Generators
  * Supports: Article, FAQPage, HowTo, BreadcrumbList
@@ -53,14 +54,14 @@ export function generateArticleSchema(input: ArticleSchemaInput) {
     author: {
       "@type": "Organization",
       name: input.authorName || "AI Knowledge Hub",
-      url: input.authorUrl || "https://aiknowledgehub.com",
+      url: input.authorUrl || SITE_URL,
     },
     publisher: {
       "@type": "Organization",
       name: input.publisherName || "AI Knowledge Hub",
       logo: {
         "@type": "ImageObject",
-        url: input.publisherLogo || "https://aiknowledgehub.com/logo.png",
+        url: input.publisherLogo || `${SITE_URL}/logo.png`,
       },
     },
   };
