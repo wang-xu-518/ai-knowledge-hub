@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    "baidu-site-verification": "codeva-QvlzdgOBYg",
+  },
 };
 
 export default function RootLayout({
