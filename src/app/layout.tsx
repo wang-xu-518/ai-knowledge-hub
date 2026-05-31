@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navigation from "@/components/navigation";
@@ -59,6 +60,21 @@ export default function RootLayout({
       <body className={cn("antialiased", inter.variable)}>
         <Navigation />
         {children}
+        <Script
+          id="baidu-tongji"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _hmt = _hmt || [];
+              (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?f22b771b534f3d5e1d5e0a0d562abb56";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );
