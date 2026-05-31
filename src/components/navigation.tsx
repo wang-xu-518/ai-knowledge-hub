@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "/", label: "首页" },
+  { href: "/blog", label: "博客" },
   { href: "/about", label: "关于我" },
   { href: "/services", label: "服务" },
   { href: "/healthcare", label: "医疗AI" },
